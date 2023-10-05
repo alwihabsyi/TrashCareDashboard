@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">TrashCareDashboard</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="trashcare_dashboard">TrashCare Dashboard</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="products">Products</string>
+    <string name="tacycle">TaCycle</string>
+    <string name="tacommerce">TaCommerce</string>
+    <string name="tacampaign">TaCampaign</string>
+    <string name="logout">Log Out</string>
+    <string name="fab">floating_action_button</string>
+    <string name="imageview">imageview</string>
+    <string name="nama_produk">Nama Produk</string>
+    <string name="deskripsi_produk">Deskripsi Produk</string>
+    <string name="harga_produk">Harga Produk</string>
+    <string name="stok_produk">Stok Produk</string>
+    <string name="save">Save</string>
+    <string name="tambahkan_foto">Tambahkan Foto</string>
+    <string name="no_order">Tidak ada pesanan</string>
+    <string name="address">Address</string>
+    <string name="shipping_method">Shipping Method: TaRider</string>
+    <string name="decline">Decline</string>
+    <string name="confirm">Confirm</string>
+    <string name="ongoing">OnGoing</string>
+    <string name="done">Done</string>
+    <string name="declined">Declined</string>
+    <string name="trash">Jenis Sampah</string>
+    <string name="daily_impact_1">Daily Impact 1</string>
+    <string name="daily_impact_2">Daily Impact 2</string>
+    <string name="daily_impact_3">Daily Impact 3</string>
+    <string name="task">Tasks</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="kirim_ke_email">Link reset password akan dikirim ke email anda</string>
+    <string name="cancel">Cancel</string>
+    <string name="send">Send</string>
+</resources>

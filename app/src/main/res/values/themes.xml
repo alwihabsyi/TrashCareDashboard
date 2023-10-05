@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TrashCareDashboard" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/greenOld</item>
+        <item name="colorSecondary">@color/greenYoung</item>
+    </style>
+
+    <style name="Theme.TrashCareDashboard" parent="Base.Theme.TrashCareDashboard" />
+</resources>
