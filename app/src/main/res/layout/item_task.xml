@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:maxWidth="380dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="20dp">
+
+            <TextView
+                android:id="@+id/tv_id_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plusjakartasans_bold"
+                android:maxLength="30"
+                android:textSize="15sp"
+                tools:text="User ID: 200890789" />
+
+            <TextView
+                android:id="@+id/tv_status_tugas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="15sp"
+                tools:text="Submitted" />
+
+            <LinearLayout
+                android:id="@+id/layout_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_id_user"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_id_tugas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/plusjakartasans_semibold"
+                    android:maxLength="50"
+                    android:minWidth="70dp"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="15sp"
+                    app:drawableStartCompat="@drawable/ic_task"
+                    app:drawableTint="?attr/colorPrimary"
+                    tools:text="Daily Impact 1" />
+
+                <TextView
+                    android:id="@+id/tv_waktu_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/plusjakartasans_semibold"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="15sp"
+                    app:drawableStartCompat="@drawable/ic_clock"
+                    app:drawableTint="?attr/colorPrimary"
+                    tools:text="19.25" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

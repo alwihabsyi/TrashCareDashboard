@@ -5,4 +5,6 @@ object Constants {
     const val ADMIN = "admin"
     const val ORDER = "order"
     const val TACYCLE = "tacycle"
+    const val TASK = "task"
+    const val PRODUCTS = "products"
 }

@@ -82,6 +82,39 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cv_user_id">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_task_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/plusjakartasans_semibold"
+                    android:textSize="16sp"
+                    tools:text="Task ID: " />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_tasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv_task_status">
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -106,6 +139,7 @@
                         android:textSize="16sp" />
 
                     <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ic_tasks_arrow"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -115,7 +149,7 @@
                 </LinearLayout>
 
                 <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/cv_jenis_sampah_detail"
+                    android:id="@+id/cv_tasks_detail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:visibility="gone"
@@ -201,6 +235,16 @@
                 app:cornerRadius="10dp" />
 
         </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/button_layout"
+            app:layout_constraintEnd_toEndOf="@id/button_layout"
+            app:layout_constraintTop_toTopOf="@id/button_layout"
+            app:layout_constraintBottom_toBottomOf="@id/button_layout"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

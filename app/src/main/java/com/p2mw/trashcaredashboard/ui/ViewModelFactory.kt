@@ -42,7 +42,15 @@ class ViewModelFactory(
         fun getInstance(orderStatus: OrderStatus): ViewModelFactory =
             ViewModelFactory(
                 Firebase.firestore,
-                orderStatus
+                orderStatus,
+                null
+            )
+
+        fun getTaskInstance(taskGroup: TaskGroup): ViewModelFactory =
+            ViewModelFactory(
+                Firebase.firestore,
+                null,
+                taskGroup
             )
     }
 

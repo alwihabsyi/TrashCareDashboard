@@ -1,5 +1,6 @@
 package com.p2mw.trashcaredashboard.ui.products.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
@@ -7,6 +8,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.p2mw.trashcaredashboard.databinding.ItemProductBinding
 import com.p2mw.trashcaredashboard.model.tacommerce.Product
+import com.p2mw.trashcaredashboard.ui.products.ProductDetailActivity
+import com.p2mw.trashcaredashboard.utils.Constants.PRODUCTS
 import com.p2mw.trashcaredashboard.utils.glide
 import com.p2mw.trashcaredashboard.utils.toPrice
 
@@ -45,12 +48,14 @@ class ProductsAdapter: RecyclerView.Adapter<ProductsAdapter.ProductsViewHolder>(
         val item = differ.currentList[position]
         holder.bind(item)
 
+        val context = holder.itemView.context
         holder.itemView.setOnClickListener {
-            onClick?.invoke(item)
+            Intent(context, ProductDetailActivity::class.java).also {
+                it.putExtra(PRODUCTS, item)
+                context.startActivity(it)
+            }
         }
     }
 
     override fun getItemCount(): Int = differ.currentList.size
-
-    var onClick: ((Product) -> Unit)? = null
 }

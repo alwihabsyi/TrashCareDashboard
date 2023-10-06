@@ -12,5 +12,6 @@ data class Task(
     val campaignNo: Int = 0,
     val photoUrl: String? = null,
     val userId: String? = null,
-    val dateSubmitted: Date? = null
+    val dateSubmitted: Date? = null,
+    val taskId: String = id + userId
 ): Parcelable

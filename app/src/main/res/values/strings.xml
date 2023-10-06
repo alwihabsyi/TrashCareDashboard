@@ -38,4 +38,6 @@
     <string name="kirim_ke_email">Link reset password akan dikirim ke email anda</string>
     <string name="cancel">Cancel</string>
     <string name="send">Send</string>
+    <string name="no_task_submitted">Tidak ada tugas dikumpulkan</string>
+    <string name="delete">Delete</string>
 </resources>
